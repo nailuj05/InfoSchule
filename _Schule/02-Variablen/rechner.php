@@ -16,13 +16,13 @@
     if($Zahl1 < 100){
         $Zusatz = $Zusatz . "Die erste Zahl ist kleiner als 100. <br>";
     }
-    if($Zahl2 % 3 == 0){
+    if(($Zahl2 % 3) == 0){
         $Zusatz = $Zusatz . "Die zweite Zahl ist durch 3 teilbar. <br>";
     }
-    if($Zahl1 < 100 and $Zahl1 > 0){
+    if(($Zahl1 < 100) and ($Zahl1 > 0)){
         $Zusatz = $Zusatz . "Die erste Zahl ist kleiner als 100 aber größer als 0. <br>";
     }
-    if($Zahl1 < 50 and $Zahl1 % 2 == 0){
+    if(($Zahl1 < 50) and ($Zahl1 % 2 == 0)){
         $Zusatz = $Zusatz . "Die erste Zahl ist kleiner als 50 und grade. <br>";
     }
 
