@@ -78,6 +78,8 @@
 
         $phi = $_GET["phi"];
 
+        $phi = deg2rad($phi);
+
         $h = Höhe($R, $r, $phi);
     }
     else if(!empty($_GET["h"])){
@@ -102,6 +104,8 @@
     $Deckfläche = Fläche($r);
     $Grundfläche = Fläche($R);
     $Oberfläche = Oberfläche($R, $r, $Mantellinie);
+
+    $phi = rad2deg($phi);
 
     echo "<br> Mithilfe der Radii R: <b>" .$R. "</b> und r: <b>" .$r. 
          "</b>, der Höhe h: <b>" .round($h * 100) / 100 . 
