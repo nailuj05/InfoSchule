@@ -15,7 +15,7 @@
     function RandArray(){
         $lottozahlen = array();
 
-        while(count($lottozahlen) < 7){
+        while(count($lottozahlen) < 6){
             $rand = rand(1, 49);
 
             if(!IsNumInArray($lottozahlen, $rand)){
