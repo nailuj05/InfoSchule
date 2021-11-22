@@ -1,6 +1,6 @@
 <?php
     function IsNumInArray($array, $num){
-        if(count($array) == 0){ 
+        if(count($array) == 0){
             return false;
         }
 
